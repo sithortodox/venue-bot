@@ -1,0 +1,22 @@
+# === Основные зависимости ===
+aiogram==3.12.0              # Telegram-бот фреймворк (async)
+fastapi==0.115.0             # Web-фреймворк для API
+uvicorn[standard]==0.30.0    # ASGI-сервер для FastAPI
+pydantic==2.9.0              # Валидация данных
+pydantic-settings==2.5.0     # Настройки из .env
+
+# === База данных ===
+sqlalchemy[asyncio]==2.0.35  # ORM (async режим)
+asyncpg==0.30.0              # Async драйвер PostgreSQL
+alembic==1.13.0              # Миграции БД
+
+# === Redis ===
+aioredis==2.0.1              # Async Redis клиент
+
+# === Утилиты ===
+python-dotenv==1.0.1         # Загрузка .env файла
+httpx==0.27.0                # Async HTTP-клиент (для API запросов)
+python-multipart==0.0.12     # Парсинг форм
+apscheduler==3.10.4          # Планировщик задач (напоминания)
+qrcode[pil]==7.4.2           # Генерация QR-кодов (для билетов)
+Pillow==10.4.0               # Обработка изображений
